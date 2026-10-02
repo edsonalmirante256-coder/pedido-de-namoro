@@ -41,9 +41,17 @@ h1{font-size:32px;margin:8px 0 14px}p{font-size:18px;line-height:1.5}.question{f
 
 <script>
 function sim(){
- document.getElementById('main').style.display='none';
- document.getElementById('success').style.display='block';
- for(let i=0;i<25;i++) setTimeout(criarCoracao,i*80);
+fetch('https://formspree.io/f/mvkgjldn',{
+method:'POST',
+headers:{'Accept':'application/json'},
+body:new URLSearchParams({
+mensagem:'💕 O pedido de namoro foi ACEITO! Ela clicou em SIM! ❤️'
+})
+});
+
+document.getElementById('main').style.display='none';
+document.getElementById('success').style.display='block';
+for(let i=0;i<25;i++) setTimeout(criarCoracao,i*80);
 }
 function foge(){
  const b=document.getElementById('no');
