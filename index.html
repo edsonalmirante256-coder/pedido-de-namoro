@@ -4,67 +4,268 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uma pergunta para ti ❤️</title>
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#4b2432}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#4b2432}.card{width:min(92%,520px);background:rgba(255,255,255,.9);border-radius:28px;padding:34px 25px;text-align:center;box-shadow:0 20px 60px rgba(170,60,100,.2);position:relative;z-index:2}
-.heart{font-size:64px;animation:pulse 1.3s infinite}.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.15);margin:8px auto 18px;display:block
-h1{font-size:32px;margin:8px 0 14px}p{font-size:18px;line-height:1.5}.question{font-size:27px;font-weight:bold;margin:24px 0}
-.buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}.btn{border:0;border-radius:999px;padding:15px 30px;font-size:18px;font-weight:bold;cursor:pointer;transition:.2s}
-.yes{background:#e91e63;color:white}.no{background:#eee;color:#555;position:relative}.yes:hover{transform:scale(1.06)}
-#success{display:none}.success-heart{font-size:90px;animation:pulse 1s infinite}
-.small{font-size:14px;color:#8a6570;margin-top:25px}
-.floating{position:fixed;bottom:-40px;font-size:25px;animation:float 7s linear infinite;opacity:.65}
-@keyframes pulse{50%{transform:scale(1.12)}}@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f5f5;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  color:#4b2432;
+}
+
+.card{
+  width:min(92%,520px);
+  background:rgba(255,255,255,.9);
+  border-radius:28px;
+  padding:34px 25px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(170,60,100,.2);
+  position:relative;
+  z-index:2;
+}
+
+.heart{
+  font-size:64px;
+  animation:pulse 1.3s infinite;
+}
+
+.photo{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid #fff;
+  box-shadow:0 8px 25px rgba(0,0,0,.15);
+  margin:8px auto 18px;
+  display:block;
+}
+
+h1{
+  font-size:32px;
+  margin:8px 0 14px;
+}
+
+p{
+  font-size:18px;
+  line-height:1.5;
+}
+
+.question{
+  font-size:27px;
+  font-weight:bold;
+  margin:24px 0;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  border:0;
+  border-radius:999px;
+  padding:15px 30px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.yes{
+  background:#e91e63;
+  color:white;
+}
+
+.no{
+  background:#eee;
+  color:#555;
+  position:relative;
+}
+
+.yes:hover{
+  transform:scale(1.06);
+}
+
+#success{
+  display:none;
+}
+
+.success-heart{
+  font-size:90px;
+  animation:pulse 1s infinite;
+}
+
+.small{
+  font-size:14px;
+  color:#8a6570;
+  margin-top:25px;
+}
+
+.floating{
+  position:fixed;
+  bottom:-40px;
+  font-size:25px;
+  animation:float 7s linear infinite;
+  opacity:.65;
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.12);
+  }
+}
+
+@keyframes float{
+  to{
+    transform:translateY(-110vh) rotate(25deg);
+    opacity:0;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <div class="card" id="main">
+
   <div class="heart">❤️</div>
-<img class="photo" id="photo" src="./IMG_3129.png" alt="Nossa foto">
+
+  <img
+    class="photo"
+    id="photo"
+    src="./IMG_3129.png"
+    alt="Nossa foto"
+  >
+
   <h1>Tenho uma pergunta para ti...</h1>
-<p>Eu Mulato brayon admito que tou apaixonado por ti e queria saber se aceitas passar o resto da tua vida comigo,tambem não tens muito tempo😹😹😹</p>
-  <div class="question">Queres namorar comigo? 💕</div>
+
+  <p>
+    Eu Mulato Brayon admito que tou apaixonado por ti e queria saber se
+    aceitas passar o resto da tua vida comigo, também não tens muito
+    tempo 😹😹😹
+  </p>
+
+  <div class="question">
+    Queres namorar comigo? 💕
+  </div>
+
   <div class="buttons">
     <button class="btn yes" onclick="sim()">SIM ❤️</button>
     <button class="btn no" id="no" onclick="foge()">NÃO 😳</button>
   </div>
-  <div class="small">Feito especialmente para ti ✨</div>
+
+  <div class="small">
+    Feito especialmente para ti ✨
+  </div>
+
 </div>
+
 
 <div class="card" id="success">
+
   <div class="success-heart">💖</div>
+
   <h1>EU SABIA! 🥰</h1>
-  <p>Então é oficial! 😂❤️ Tá pronta pra ser minha prisioneira? Wau, vai ser fixe! Agora não tens como escapar! 🤣😂💕</p>
-  <p><strong>Gosto muito de ti. ❤️</strong></p>
-<div style="font-size:70px">👩‍❤️‍💋‍👨</div>
-<div style="font-size:45px">🥰🤗💕🤗🥰</div>
+
+  <p>
+    Então é oficial! 😂❤️ Tá pronta pra ser minha prisioneira?
+    Wau, vai ser fixe! Agora não tens como escapar! 🤣😂💕
+  </p>
+
+  <p>
+    <strong>Gosto muito de ti. ❤️</strong>
+  </p>
+
+  <div style="font-size:70px">
+    👩‍❤️‍💋‍👨
+  </div>
+
+  <div style="font-size:45px">
+    🥰🤗💕🤗🥰
+  </div>
+
 </div>
 
-<script>
-function sim(){
-fetch('https://formspree.io/f/mvkgjldn',{
-method:'POST',
-headers:{'Accept':'application/json'},
-body:new URLSearchParams({
-mensagem:'💕 O pedido de namoro foi ACEITO! Ela clicou em SIM! ❤️'
-})
-});
 
-document.getElementById('main').style.display='none';
-document.getElementById('success').style.display='block';
-for(let i=0;i<25;i++) setTimeout(criarCoracao,i*80);
+<script>
+
+function sim(){
+
+  fetch('https://formspree.io/f/mvkgjldn',{
+    method:'POST',
+    headers:{
+      'Accept':'application/json'
+    },
+    body:new URLSearchParams({
+      mensagem:'💕 O pedido de namoro foi ACEITO! Ela clicou em SIM! ❤️'
+    })
+  });
+
+  document.getElementById('main').style.display='none';
+  document.getElementById('success').style.display='block';
+
+  for(let i=0;i<25;i++){
+    setTimeout(criarCoracao,i*80);
+  }
 }
+
+
 function foge(){
- const b=document.getElementById('no');
- b.style.position='fixed';
- b.style.left=Math.random()*75+10+'%';
- b.style.top=Math.random()*75+10+'%';
- b.textContent=['NÃO 😳','Tenta outra vez 😂','Não podes! ❤️','Escolhe SIM 😏'][Math.floor(Math.random()*4)];
+
+  const b=document.getElementById('no');
+
+  b.style.position='fixed';
+
+  b.style.left=Math.random()*75+10+'%';
+
+  b.style.top=Math.random()*75+10+'%';
+
+  b.textContent=[
+    'NÃO 😳',
+    'Tenta outra vez 😂',
+    'Não podes! ❤️',
+    'Escolhe SIM 😏'
+  ][Math.floor(Math.random()*4)];
 }
+
+
 function criarCoracao(){
- const e=document.createElement('div');e.className='floating';e.textContent=['❤️','💕','💖','💗','✨'][Math.floor(Math.random()*5)];
- e.style.left=Math.random()*100+'vw';e.style.animationDuration=(3+Math.random()*5)+'s';
- document.body.appendChild(e);setTimeout(()=>e.remove(),8000);
+
+  const e=document.createElement('div');
+
+  e.className='floating';
+
+  e.textContent=[
+    '❤️',
+    '💕',
+    '💖',
+    '💗',
+    '✨'
+  ][Math.floor(Math.random()*5)];
+
+  e.style.left=Math.random()*100+'vw';
+
+  e.style.animationDuration=(3+Math.random()*5)+'s';
+
+  document.body.appendChild(e);
+
+  setTimeout(()=>{
+    e.remove();
+  },8000);
 }
+
 </script>
+
 </body>
 </html>
